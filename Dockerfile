@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN python -m unittest discover
 
 # Default command
-CMD ["python"]
+CMD ["python", "calculator.py"]
