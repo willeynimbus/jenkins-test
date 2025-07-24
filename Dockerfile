@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirement.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Run unit tests inside container (optional, can be removed from here if you want only pipeline to run tests)
 RUN python -m unittest discover
